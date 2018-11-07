@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="4">
+
+  <testsuite name="empman"
+    errors="1" failures="0" hostname="" id="" package="empman" skipped="3"
+    tests="4" time="0.1050" timestamp="Wed, 07 Nov 2018 04:35:28 GMT">
+  
+    <testcase name="Check Save Button" classname="empman" time="0.1050" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Empman / Check Save Button]:
+
+  ReferenceError: empemployeemanagerpo is not defined
+    at module.exports (C:\Users\abhilasha\DevMtn\employeemanager\tests\savefunction.js:110:1)
+    at Object.Check Save Button (C:\Users\abhilasha\DevMtn\employeemanager\tests\empman.js:20:9)
+    at Module.call (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\abhilasha\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Check Cancel Button" classname="empman">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Check Character Limit" classname="empman">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Check Phone Limit" classname="empman">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

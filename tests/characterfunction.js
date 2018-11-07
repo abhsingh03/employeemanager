@@ -1,0 +1,111 @@
+module.exports = (employeemanagerpo, characterlimit) => {
+    employeemanagerpo
+                .navigate()
+                .click('@employee1')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Bernice Ortiz').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee2')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Marnie Barnett').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee3')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Phillip Weaver').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee4')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Teresa Osborne').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee5')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Dollie Berry').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee6')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Harriett Williamson').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee7')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Ruby Estrada').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee8')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Lou White').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee9')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Eve Sparks').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+
+    employeemanagerpo
+                .navigate()
+                .click('@employee10')
+                .clearValue('@nameEntry')
+                .setValue('@nameEntry', characterlimit.nameEntry)
+                .clearValue('@title')
+                .setValue('@title', characterlimit.title)
+                .click('@save')
+    employeemanagerpo.expect.element('@name1').text.to.contain('Lois Brewer').before(5000)
+    employeemanagerpo.expect.element('@error').text.to.contain('The name field must be between 1 and 30 characters long. The title field must be between 1 and 30 characters long.')
+}
